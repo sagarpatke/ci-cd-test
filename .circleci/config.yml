@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  project_test:
+  build:
     working_directory: ~/repository
     docker:
       - image: circleci/node:10.9.0
@@ -22,4 +22,4 @@ workflows:
   version: 2
   test:
     jobs:
-      - project_test
+      - build
