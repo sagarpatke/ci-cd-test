@@ -18,7 +18,7 @@
   },
   "scripts": {
     "serve": "concurrently \"react-scripts start\" \"json-server -p 3001 -r routes.json -w db.json\"",
-    "start": "json-server -p $PORT -s build -r routes.json -w db.json",
+    "start": "json-server -H 0.0.0.0 -p $PORT -s build -r routes.json -w db.json",
     "postinstall": "react-scripts build",
     "build": "react-scripts build",
     "test": "mocha src/**/*.test.js",
